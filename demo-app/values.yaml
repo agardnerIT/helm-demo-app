@@ -37,8 +37,9 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: LoadBalancer
-  port: 80
+  type: NodePort
+  port: 31528
+  nodePort: 31528
 
 ingress:
   enabled: false
